@@ -1,0 +1,100 @@
+// Color variables - if you are specifying a color directly somewhere, check here first.
+//
+// $base - $base is the new black
+// $radius - Radius' signature blue (also open records)
+// $white - yes, we're defining white (in case we actually want white to be eggshell)
+// $subtext - for text that's keeping it classy
+// $demure - for low-key borders
+// $subtle - dim grey for subtle borders, wells, and backgrounds
+// $new - highlight for new records
+// $won - highlight for won records
+// $lost - highlight for lost records
+//
+// Styleguide 1.x
+
+$base: #303B3E;
+$radius: #4E7EA4;
+$radius-rgb: rgb(78,126,164);
+$radius-light: #F1F6FC;
+$radius-dark: darken($radius, 10%);
+$white: #ffffff;
+$subtext: #999e9f;
+$demure: #E1DFE0;
+$subtle: #FAFAFA;
+$new: #FDB44D;
+$won: #A1CC84;
+$lost: #F04A58;
+
+// Typography variables
+//
+// $base-font-size
+// $base-line-height
+// $base-spacing-unit
+// $half-spacing-unit
+// $line-height-ratio
+// $base-font-family
+//
+// Styleguide 1.x
+
+$base-font-size:    13px;
+$base-line-height:  1.5 * $base-font-size;
+
+$base-spacing-unit: $base-line-height;
+$half-spacing-unit: $base-spacing-unit / 2;
+$line-height-ratio: $base-line-height / $base-font-size;
+
+$base-font-family:  "ApexSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// Supported weights: 200, 300, 400, 500, 700, 800
+
+// Font sizes (in pixels), generated using a modular-scale, with 6 steps for headings and 8 steps for micro-padding.
+//
+// Styleguide 1.x
+
+$type-ratio: 1.067;
+
+$alpha:           modular-scale($base-font-size, 5, $type-ratio);
+$beta:           modular-scale($base-font-size, 4, $type-ratio);
+$gamma:           modular-scale($base-font-size, 3, $type-ratio);
+$delta:           modular-scale($base-font-size, 2, $type-ratio);
+$epsilon:           modular-scale($base-font-size, 1, $type-ratio);
+$zeta:           modular-scale($base-font-size, 0, $type-ratio);
+
+$milli:        modular-scale($base-font-size, -1, $type-ratio);
+$micro:        modular-scale($base-font-size, -2, $type-ratio);
+$nano:        	modular-scale($base-font-size, -3, $type-ratio);
+$pico:			modular-scale($base-font-size, -4, $type-ratio);
+$femto:			modular-scale($base-font-size, -5, $type-ratio);
+$atto:			modular-scale($base-font-size, -6, $type-ratio);
+$zepto:			modular-scale($base-font-size, -7, $type-ratio);
+$yocto:			modular-scale($base-font-size, -8, $type-ratio);
+
+
+// Grid variables - these apply to Bourbon Neat
+//
+// $column - column width
+// $gutter - gutter between each two columns
+// $grid-columns - total number of columns in the grid
+// $max-width - max-width of the outer container
+// $border-box-sizing - makes all elements have a border-box layout (true/false)
+// $default-feature - Default @media feature for the breakpoint() mixin
+// $default-layout-direction - which direction do we read in? (RTL/LTR)
+//
+// Styleguide 1.x
+
+$column: golden-ratio(1rem, 3); // Column width
+$gutter: golden-ratio(1rem, 3); // Gutter between each two columns
+$grid-columns: 12; // Total number of columns in the grid
+$max-width: 72rem; // Max-width of the outer container
+$border-box-sizing: true; // Makes all elements have a border-box layout
+$default-feature: min-width; // Default @media feature for the breakpoint() mixin
+$default-layout-direction: LTR;
+
+// Fonts Variables
+//
+// $font-path - the... path to the fonts
+// $fa-version - FontAwesome version
+//
+// Styleguide 1.x
+
+$font-path:        "../fonts";
+$fa-version:          "4.0.3";
